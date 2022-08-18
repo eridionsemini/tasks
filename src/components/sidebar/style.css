@@ -1,0 +1,122 @@
+.navbar {
+    background-color: transparent;
+    height: 8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    background-color: #262338;
+    width: 37.6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    list-style: none;
+    height: 2.4rem;
+    width: 31.2rem;
+    margin-top: 3.2rem;
+    cursor: pointer;
+}
+
+.nav-text {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.8rem;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    border-radius: .4rem;
+}
+
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.avatar-wrapper {
+    height: 8.8rem;
+    width: 31.2rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border: .2rem solid #4E4B66;
+    border-radius: 1.2rem;
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-profile {
+    color: white;
+    margin-left: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+.radio {
+    margin-right: 1.7rem;
+}
+
+.sidebar-badge {
+    background-color: #A996FF;
+    border-radius: .8rem;
+    padding: .3rem .8rem !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-text {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    color: #14142B;
+}
+.card {
+    background: #262338 !important;
+    border-radius: 3.2rem;
+    margin: 8rem;
+    padding-right: 9rem;
+    padding-left: 9rem;
+    padding-bottom: 17rem;
+}
+
+
+span {
+    margin-left: 2rem;
+}
