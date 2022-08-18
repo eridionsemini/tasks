@@ -9,6 +9,7 @@ import plus from "../../assets/images/plus.png";
 const Done = () => {
     const [opened, setOpened] = useState(null);
     const {tasks, completed} = useSelector((state) => state.tasks);
+    console.log('completed',completed)
 
     const handleClick = (id) => {
         if (id === opened) {

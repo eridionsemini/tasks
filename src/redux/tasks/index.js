@@ -19,7 +19,7 @@ const taskSlice = createSlice({
             task.priority.id = 5;
             task.priority.value = 'DONE';
             state.remaining = state.remaining - 1;
-            state.completed = state.completed - 1;
+            state.completed = state.completed + 1;
         },
         calculateRemainingTasks: (state) => {
             state.remaining = state.tasks.filter((x) => x.priority.id !== 5).length;
