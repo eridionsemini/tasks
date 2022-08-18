@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
+import {calculateCompletedTasks} from "../../redux/tasks";
 import avatar from '../../assets/images/avatar.png';
 import arrow_down from '../../assets/images/arrow-down.png';
 import arrow_right from '../../assets/images/arrow-right.png';
@@ -8,7 +9,11 @@ import './style.css';
 
 const Sidebar = ({checked}) => {
     const history = useHistory();
+    const dispatch = useDispatch();
     const {remaining} = useSelector((state) => state.tasks);
+    useEffect(() => {
+        dispatch(calculateCompletedTasks())
+    }, [])
 
     return (
         <>

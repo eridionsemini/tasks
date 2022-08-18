@@ -19,6 +19,7 @@ const Done = () => {
             setOpened(id)
         }
     }
+
     return (
         <div className='row'>
             <div className='col-3'>
@@ -30,7 +31,6 @@ const Done = () => {
                     {completed > 0 ? <div className="accordion" id="accordion">
                             {tasks.filter((ele) => ele.priority.id === 5)
                                 .sort(function (a, b) {
-
                                     /// sort same priority task by the newest task
                                     if (a.priority.id === b.priority.id) {
                                         if (a.id > b.id) return -1;
